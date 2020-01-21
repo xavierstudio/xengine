@@ -1,0 +1,10 @@
+xengine
+V1.0
+
+動態調度Shell任務列表, 壓榨CPU性能.
+
+install : 使用command "gcc xengine.c" 得到文件xengine
+
+run command : xengine shell.list 並發數
+
+e.g. : xengine ./demo.sh 5
