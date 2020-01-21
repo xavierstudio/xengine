@@ -1,0 +1,436 @@
+#if 0
+	shc Version 3.8.9b, Generic Script Compiler
+	Copyright (c) 1994-2015 Francisco Rosales <frosal@fi.upm.es>
+
+	shc -rvTf ./xengine.source 
+#endif
+
+static  char data [] = 
+#define      pswd_z	256
+#define      pswd	((&data[55]))
+	"\331\065\022\103\152\135\311\157\234\270\357\370\047\315\351\364"
+	"\225\123\261\306\221\362\065\355\344\323\374\121\324\330\012\256"
+	"\016\035\361\170\172\273\347\027\164\327\020\233\244\372\217\072"
+	"\115\101\000\337\063\065\314\363\340\367\142\324\302\154\330\215"
+	"\220\233\335\121\227\004\216\300\065\076\106\077\304\374\006\274"
+	"\052\075\142\063\257\135\046\220\124\211\144\027\365\075\245\206"
+	"\331\202\327\160\206\146\060\273\244\167\373\150\163\001\045\235"
+	"\076\207\320\356\345\367\176\072\200\343\122\166\041\367\374\372"
+	"\172\323\152\001\071\233\274\336\022\267\107\206\271\154\044\370"
+	"\363\365\347\331\354\146\024\155\111\146\343\153\136\337\145\331"
+	"\263\317\332\354\153\227\313\175\117\022\004\010\176\050\001\162"
+	"\036\350\114\012\116\140\167\230\307\133\003\046\072\150\377\356"
+	"\070\331\332\243\160\245\041\300\270\045\310\066\116\312\250\154"
+	"\262\364\167\001\125\357\231\034\112\235\102\205\006\101\163\076"
+	"\033\116\341\214\364\003\114\254\051\025\342\167\337\213\344\222"
+	"\177\133\223\324\112\055\361\224\312\063\031\320\165\215\016\220"
+	"\333\360\035\317\364\151\173\035\176\136\224\136\351\170\360\151"
+	"\324\203\076\036\260\057\262\173\143\314\113\330\131\132\151\064"
+	"\112\206\004\077\357\200\134\156\336\360\314\307\151\275\060\075"
+	"\101\156\134\361\236\017\155\030\011\311\152\336\242\164\215\260"
+	"\221\176\051\014\071\021\043\255\350\063\111\215\056\331\307\173"
+	"\032\310\132\116\376\047\146\007\360\320\346\223\105\163\103\326"
+	"\362\155\342\054\176"
+#define      msg1_z	42
+#define      msg1	((&data[366]))
+	"\072\043\364\150\374\274\344\027\204\234\310\171\041\204\324\135"
+	"\163\070\150\027\204\116\114\105\023\142\313\001\303\221\056\350"
+	"\135\131\046\007\062\160\330\230\144\201\373\203\027\257\303\225"
+	"\327\012\131\076\145\202\146"
+#define      opts_z	1
+#define      opts	((&data[412]))
+	"\250"
+#define      msg2_z	19
+#define      msg2	((&data[415]))
+	"\342\344\072\037\365\202\317\010\060\237\053\311\157\037\360\325"
+	"\176\356\173\344\372\055\271\326\232"
+#define      rlax_z	1
+#define      rlax	((&data[438]))
+	"\250"
+#define      text_z	734
+#define      text	((&data[597]))
+	"\335\000\164\105\375\060\051\024\265\150\171\070\317\106\302\046"
+	"\343\063\020\306\027\076\177\355\331\033\360\362\276\315\162\233"
+	"\315\347\340\312\030\012\337\315\163\131\005\102\237\310\150\202"
+	"\373\171\111\022\267\310\000\221\343\361\203\242\276\366\075\214"
+	"\336\036\127\366\051\066\304\234\217\311\337\056\221\110\261\215"
+	"\301\372\240\171\303\240\012\247\221\216\111\120\205\207\334\143"
+	"\245\063\131\317\152\035\154\371\347\113\050\170\224\332\006\126"
+	"\325\246\317\230\106\332\077\330\151\211\051\356\020\006\121\265"
+	"\071\253\205\243\310\361\235\260\075\306\051\321\240\057\047\165"
+	"\325\367\016\034\322\115\365\073\326\036\052\347\044\173\303\136"
+	"\064\134\040\071\253\000\053\203\066\326\323\253\046\042\271\005"
+	"\303\374\307\070\237\023\221\075\301\377\241\101\102\303\367\007"
+	"\033\171\204\234\235\244\360\215\070\046\050\323\336\130\225\330"
+	"\376\370\267\317\365\255\250\367\317\252\005\104\255\112\206\242"
+	"\341\247\365\117\362\100\301\156\232\124\230\106\172\067\073\032"
+	"\276\007\154\300\245\177\254\247\045\323\266\137\052\262\130\301"
+	"\025\264\147\101\224\305\136\224\014\057\276\360\022\142\220\175"
+	"\245\346\103\214\312\034\127\340\042\273\115\320\256\342\226\224"
+	"\306\074\203\041\040\346\345\234\114\054\337\220\364\177\040\055"
+	"\002\145\176\212\057\115\267\253\207\307\141\333\211\154\145\231"
+	"\051\275\135\160\254\256\370\233\273\135\321\312\123\377\263\216"
+	"\016\373\162\003\240\273\143\252\130\112\010\322\057\021\222\343"
+	"\253\005\227\276\331\062\306\366\014\276\106\232\243\256\204\355"
+	"\364\331\007\156\142\165\163\107\302\031\316\377\130\127\275\322"
+	"\056\116\142\216\177\007\075\327\004\245\275\100\046\041\207\224"
+	"\263\217\372\241\234\164\316\006\257\144\367\234\171\044\267\142"
+	"\333\043\021\204\017\343\123\365\222\223\163\240\370\103\120\030"
+	"\307\235\141\366\067\144\361\005\162\372\351\251\137\107\017\300"
+	"\250\364\331\315\221\245\053\234\043\111\323\004\202\142\174\251"
+	"\105\160\210\350\054\316\172\042\147\274\356\134\271\266\073\122"
+	"\231\033\100\136\255\001\116\041\003\362\316\271\134\221\073\072"
+	"\136\111\125\075\155\257\135\150\155\111\173\333\100\370\005\075"
+	"\025\033\205\232\015\217\231\151\146\064\210\117\040\122\067\277"
+	"\357\125\064\373\250\341\164\200\211\103\331\306\244\336\071\133"
+	"\325\032\241\334\206\272\166\201\032\307\105\113\300\340\016\371"
+	"\204\023\002\246\035\374\150\320\006\335\316\117\266\143\270\277"
+	"\162\036\244\124\265\201\067\145\377\054\141\162\201\155\230\112"
+	"\021\253\134\123\326\004\041\153\123\025\311\173\357\063\207\257"
+	"\053\077\166\035\364\222\061\324\024\323\146\320\357\144\206\131"
+	"\031\013\303\031\145\053\344\060\374\366\357\132\230\202\003\013"
+	"\375\054\217\115\366\250\356\155\314\122\234\135\313\051\246\374"
+	"\377\361\142\112\370\262\205\221\076\235\046\041\121\345\144\157"
+	"\046\001\156\227\242\164\044\031\334\133\125\166\066\111\176\254"
+	"\147\234\373\165\307\113\037\321\041\377\077\225\120\133\110\273"
+	"\124\000\043\165\171\012\227\272\377\051\270\270\147\363\052\312"
+	"\346\076\316\310\175\207\161\055\027\316\027\040\351\125\270\332"
+	"\305\355\312\051\375\176\121\253\011\170\214\160\313\141\237\240"
+	"\154\070\241\261\000\335\365\125\242\107\374\346\306\235\022\356"
+	"\015\037\362\064\061\200\320\222\257\242\325\203\057\075\057\222"
+	"\010\372\173\024\034\143\075\255\373\265\345\174\245\106\373\020"
+	"\303\253\144\347\144\216\232\257\236\151\070\007\257\254\156\120"
+	"\121\171\273\223\003\352\140\073\127\000\224\036\153\240\242\055"
+	"\042\036\327\301\262\054\303\205\154\034\351\315\362\345\345\255"
+	"\353\133\302\366\021\106\215\343\226\305\345\155\255\256\333\342"
+	"\035\162\070\104\307\073\007\047\323\306\343\275\030\321\244\365"
+	"\233\076\247\323\250\105\166\356\154\033\101\320\235\136\046\042"
+	"\002\357\023\240\237\120\146\311\041\006\370\111\174\315\101\212"
+	"\352\023\330\337\117\257\376\171\226\042\364\063\201\033\125\204"
+	"\013\151\044\253\272\212\164\334\221\155\045\015\072\146\230\045"
+	"\172\160\004\311\040\002\102\266\045\067\352\246\123\100\053\136"
+	"\251\117\012\144\332\176\100\154\353\146\171\046\314\022\113\107"
+	"\203\120\020\243\122\123\132\170"
+#define      chk1_z	22
+#define      chk1	((&data[1424]))
+	"\336\364\162\162\000\002\021\314\272\346\143\323\230\104\104\113"
+	"\056\141\047\110\216\103\350"
+#define      tst1_z	22
+#define      tst1	((&data[1447]))
+	"\057\175\327\041\006\012\062\110\316\364\266\072\210\357\356\214"
+	"\071\227\020\322\164\071\274\231"
+#define      inlo_z	3
+#define      inlo	((&data[1470]))
+	"\153\335\372"
+#define      tst2_z	19
+#define      tst2	((&data[1477]))
+	"\262\071\132\330\014\336\223\352\367\335\212\144\022\116\052\065"
+	"\333\053\325\215\162\163\100\006\154\044\116"
+#define      chk2_z	19
+#define      chk2	((&data[1502]))
+	"\223\307\341\011\202\221\130\233\300\057\162\176\002\013\106\236"
+	"\026\027\044\337\274\262"
+#define      date_z	1
+#define      date	((&data[1522]))
+	"\056"
+#define      shll_z	14
+#define      shll	((&data[1524]))
+	"\270\037\370\274\315\114\152\064\225\120\025\152\062\226\072"
+#define      xecc_z	18
+#define      xecc	((&data[1539]))
+	"\102\241\050\052\257\077\162\311\100\033\226\103\266\001\230\174"
+	"\041\001\113\241\173\267\147"
+#define      lsto_z	3
+#define      lsto	((&data[1561]))
+	"\144\045\110"/* End of data[] */;
+#define      hide_z	4096
+#define DEBUGEXEC	0	/* Define as 1 to debug execvp calls */
+#define TRACEABLE	1	/* Define as 1 to enable ptrace the executable */
+
+/* rtc.c */
+
+#include <sys/stat.h>
+#include <sys/types.h>
+
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+
+/* 'Alleged RC4' */
+
+static unsigned char stte[256], indx, jndx, kndx;
+
+/*
+ * Reset arc4 stte. 
+ */
+void stte_0(void)
+{
+	indx = jndx = kndx = 0;
+	do {
+		stte[indx] = indx;
+	} while (++indx);
+}
+
+/*
+ * Set key. Can be used more than once. 
+ */
+void key(void * str, int len)
+{
+	unsigned char tmp, * ptr = (unsigned char *)str;
+	while (len > 0) {
+		do {
+			tmp = stte[indx];
+			kndx += tmp;
+			kndx += ptr[(int)indx % len];
+			stte[indx] = stte[kndx];
+			stte[kndx] = tmp;
+		} while (++indx);
+		ptr += 256;
+		len -= 256;
+	}
+}
+
+/*
+ * Crypt data. 
+ */
+void arc4(void * str, int len)
+{
+	unsigned char tmp, * ptr = (unsigned char *)str;
+	while (len > 0) {
+		indx++;
+		tmp = stte[indx];
+		jndx += tmp;
+		stte[indx] = stte[jndx];
+		stte[jndx] = tmp;
+		tmp += stte[indx];
+		*ptr ^= stte[tmp];
+		ptr++;
+		len--;
+	}
+}
+
+/* End of ARC4 */
+
+/*
+ * Key with file invariants. 
+ */
+int key_with_file(char * file)
+{
+	struct stat statf[1];
+	struct stat control[1];
+
+	if (stat(file, statf) < 0)
+		return -1;
+
+	/* Turn on stable fields */
+	memset(control, 0, sizeof(control));
+	control->st_ino = statf->st_ino;
+	control->st_dev = statf->st_dev;
+	control->st_rdev = statf->st_rdev;
+	control->st_uid = statf->st_uid;
+	control->st_gid = statf->st_gid;
+	control->st_size = statf->st_size;
+	control->st_mtime = statf->st_mtime;
+	control->st_ctime = statf->st_ctime;
+	key(control, sizeof(control));
+	return 0;
+}
+
+#if DEBUGEXEC
+void debugexec(char * sh11, int argc, char ** argv)
+{
+	int i;
+	fprintf(stderr, "shll=%s\n", sh11 ? sh11 : "<null>");
+	fprintf(stderr, "argc=%d\n", argc);
+	if (!argv) {
+		fprintf(stderr, "argv=<null>\n");
+	} else { 
+		for (i = 0; i <= argc ; i++)
+			fprintf(stderr, "argv[%d]=%.60s\n", i, argv[i] ? argv[i] : "<null>");
+	}
+}
+#endif /* DEBUGEXEC */
+
+void rmarg(char ** argv, char * arg)
+{
+	for (; argv && *argv && *argv != arg; argv++);
+	for (; argv && *argv; argv++)
+		*argv = argv[1];
+}
+
+int chkenv(int argc)
+{
+	char buff[512];
+	unsigned long mask, m;
+	int l, a, c;
+	char * string;
+	extern char ** environ;
+
+	mask  = (unsigned long)&chkenv;
+	mask ^= (unsigned long)getpid() * ~mask;
+	sprintf(buff, "x%lx", mask);
+	string = getenv(buff);
+#if DEBUGEXEC
+	fprintf(stderr, "getenv(%s)=%s\n", buff, string ? string : "<null>");
+#endif
+	l = strlen(buff);
+	if (!string) {
+		/* 1st */
+		sprintf(&buff[l], "=%lu %d", mask, argc);
+		putenv(strdup(buff));
+		return 0;
+	}
+	c = sscanf(string, "%lu %d%c", &m, &a, buff);
+	if (c == 2 && m == mask) {
+		/* 3rd */
+		rmarg(environ, &string[-l - 1]);
+		return 1 + (argc - a);
+	}
+	return -1;
+}
+
+#if !defined(TRACEABLE)
+
+#define _LINUX_SOURCE_COMPAT
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdio.h>
+#include <unistd.h>
+
+#if !defined(PTRACE_ATTACH) && defined(PT_ATTACH)
+#	define PTRACE_ATTACH	PT_ATTACH
+#endif
+void untraceable(char * argv0)
+{
+	char proc[80];
+	int pid, mine;
+
+	switch(pid = fork()) {
+	case  0:
+		pid = getppid();
+		/* For problematic SunOS ptrace */
+#if defined(__FreeBSD__)
+		sprintf(proc, "/proc/%d/mem", (int)pid);
+#else
+		sprintf(proc, "/proc/%d/as",  (int)pid);
+#endif
+		close(0);
+		mine = !open(proc, O_RDWR|O_EXCL);
+		if (!mine && errno != EBUSY)
+			mine = !ptrace(PTRACE_ATTACH, pid, 0, 0);
+		if (mine) {
+			kill(pid, SIGCONT);
+		} else {
+			perror(argv0);
+			kill(pid, SIGKILL);
+		}
+		_exit(mine);
+	case -1:
+		break;
+	default:
+		if (pid == waitpid(pid, 0, 0))
+			return;
+	}
+	perror(argv0);
+	_exit(1);
+}
+#endif /* !defined(TRACEABLE) */
+
+char * xsh(int argc, char ** argv)
+{
+	char * scrpt;
+	int ret, i, j;
+	char ** varg;
+	char * me = argv[0];
+
+	stte_0();
+	 key(pswd, pswd_z);
+	arc4(msg1, msg1_z);
+	arc4(date, date_z);
+	if (date[0] && (atoll(date)<time(NULL)))
+		return msg1;
+	arc4(shll, shll_z);
+	arc4(inlo, inlo_z);
+	arc4(xecc, xecc_z);
+	arc4(lsto, lsto_z);
+	arc4(tst1, tst1_z);
+	 key(tst1, tst1_z);
+	arc4(chk1, chk1_z);
+	if ((chk1_z != tst1_z) || memcmp(tst1, chk1, tst1_z))
+		return tst1;
+	ret = chkenv(argc);
+	arc4(msg2, msg2_z);
+	if (ret < 0)
+		return msg2;
+	varg = (char **)calloc(argc + 10, sizeof(char *));
+	if (!varg)
+		return 0;
+	if (ret) {
+		arc4(rlax, rlax_z);
+		if (!rlax[0] && key_with_file(shll))
+			return shll;
+		arc4(opts, opts_z);
+		arc4(text, text_z);
+		arc4(tst2, tst2_z);
+		 key(tst2, tst2_z);
+		arc4(chk2, chk2_z);
+		if ((chk2_z != tst2_z) || memcmp(tst2, chk2, tst2_z))
+			return tst2;
+		/* Prepend hide_z spaces to script text to hide it. */
+		scrpt = malloc(hide_z + text_z);
+		if (!scrpt)
+			return 0;
+		memset(scrpt, (int) ' ', hide_z);
+		memcpy(&scrpt[hide_z], text, text_z);
+	} else {			/* Reexecute */
+		if (*xecc) {
+			scrpt = malloc(512);
+			if (!scrpt)
+				return 0;
+			sprintf(scrpt, xecc, me);
+		} else {
+			scrpt = me;
+		}
+	}
+	j = 0;
+	varg[j++] = argv[0];		/* My own name at execution */
+	if (ret && *opts)
+		varg[j++] = opts;	/* Options on 1st line of code */
+	if (*inlo)
+		varg[j++] = inlo;	/* Option introducing inline code */
+	varg[j++] = scrpt;		/* The script itself */
+	if (*lsto)
+		varg[j++] = lsto;	/* Option meaning last option */
+	i = (ret > 1) ? ret : 0;	/* Args numbering correction */
+	while (i < argc)
+		varg[j++] = argv[i++];	/* Main run-time arguments */
+	varg[j] = 0;			/* NULL terminated array */
+#if DEBUGEXEC
+	debugexec(shll, j, varg);
+#endif
+	execvp(shll, varg);
+	return shll;
+}
+
+int main(int argc, char ** argv)
+{
+#if DEBUGEXEC
+	debugexec("main", argc, argv);
+#endif
+#if !defined(TRACEABLE)
+	untraceable(argv[0]);
+#endif
+	argv[1] = xsh(argc, argv);
+	fprintf(stderr, "%s%s%s: %s\n", argv[0],
+		errno ? ": " : "",
+		errno ? strerror(errno) : "",
+		argv[1] ? argv[1] : "<null>"
+	);
+	return 1;
+}
