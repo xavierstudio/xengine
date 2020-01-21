@@ -1,10 +1,3 @@
-#if 0
-	shc Version 3.8.9b, Generic Script Compiler
-	Copyright (c) 1994-2015 Francisco Rosales <frosal@fi.upm.es>
-
-	shc -rvTf xengine.source 
-#endif
-
 static  char data [] = 
 #define      tst1_z	22
 #define      tst1	((&data[2]))
