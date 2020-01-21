@@ -8,3 +8,38 @@ install : 使用command "gcc xengine.c" 得到文件xengine
 run command : xengine shell.list 並發數
 
 e.g. : xengine ./demo.sh 5
+
+對比:
+cmd: ./demo.sh
+一般來說,這個demo.sh運行時間為 (1+2+3+4+5)*5 == 75秒.
+
+使用xengine之後: (5,10,15,20,25是並行線程數)
+cmd: xengine ./demo.sh 5 -> 18秒
+cmd: xengine ./demo.sh 10 -> 10秒
+cmd: xengine ./demo.sh 15 -> 8秒
+cmd: xengine ./demo.sh 20 -> 7秒
+cmd: xengine ./demo.sh 25 -> 5秒
+
+需要注意的問題:
+shell.list 文件中, 一行代表著一個任務
+1. 假如有幾個shell command的話, 需要使用";"分割, 例如 cmd;cmd;cmd...
+2. 假如是非常多shell command的話, 推薦你把這些shell建立流程與文件, 比如建立為test.sh, 然後寫成:
+        test.sh ...
+        test.sh ...
+        test.sh ...
+        ...
+
+Warning: xengine 會自動添加一個數字到shell.list中每一行的最後, 可以讓你實時觀看當前線程的完成狀況.
+        例如運行cmd: xengine ./demo.sh 1, print:
+            1-A
+            1
+            2-A
+            2
+            3-A
+            3
+            4-A
+            4
+            5-A
+            5
+            1-B
+            6
