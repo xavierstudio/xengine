@@ -4,7 +4,7 @@ V1.0
 動態調度Shell任務列表, 壓榨CPU性能.
 
 環境需求 : Redhat 4/5; CentOS 5/6/7; ubuntu 14.04+; debian 8+
-軟體需求 : Perl/5.8+ , gcc/4.2.2+
+軟體需求 : Perl/5.8+(need thread.pm) , gcc/4.2.2+
 
 install : 使用command "gcc xengine.c -o xengine" 得到文件xengine
 
